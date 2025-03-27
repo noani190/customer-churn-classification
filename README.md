@@ -4,7 +4,7 @@ This repository contains an implementation of a model for predicting customer ch
 
 ### Data and Assumptions:
 The original data contains synthetically generated information about customers, including indices for both customer and date of transaction, type of plan they are assigned to and whether or not they churned.
-Another assumption I made is that I will disregard the fact that a customer had already been marked as churned at month X, and will still use month X+1 - my reasoning is that the customer still passes transactions in the following months (even though marked as churning). So perhaps this is when a customer started inclining towards leaving but not necessarily left yet.
+I decided I will disregard the fact that a customer had already been marked as churned at month X, and will still use month X+1 - my reasoning is that in the given data, the customer still passes transactions even in the months following the month they are labelled as churned. Therefore, my assumption here is that they get a '1' when the customer started inclining towards leaving but not necessarily leaving yet.
 
 ### Chosen Model, Input, and Output:
 I've chosen to use Random Forest model for the following reasons:
